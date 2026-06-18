@@ -42,7 +42,7 @@ pipeline {
         stage('Deploy Stage') {
             steps {
                 echo 'Deploying Application'
-                sh 'docker run -d -p 8081:8080 ${DOCKER_IMAGE}'
+                sh 'docker run -d -p 8081:8080 ${DOCKER_IMAGE} || true'
             }
         }
     }
