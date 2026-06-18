@@ -24,7 +24,7 @@ pipeline {
         // STEP 2 - Git Clone
         stage('Git Clone') {
             steps {
-                git 'https://github.com/Mohan12340/simple-java-maven-app.git'
+                git 'https://github.com/likithc/simple-java-maven-app.git'
             }
         }
 
