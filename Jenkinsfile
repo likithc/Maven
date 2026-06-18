@@ -21,12 +21,6 @@ pipeline {
             }
         }
 
-        // STEP 2 - Git Clone
-        stage('Git Clone') {
-            steps {
-                git 'https://github.com/likithc/Maven.git'
-            }
-        }
 
         // STEP 3 - Maven Build
         stage('Maven Build') {
